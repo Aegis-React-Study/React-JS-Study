@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   all: unset;
   display: flex;
@@ -26,7 +30,7 @@ body {
   align-items: center;
   color: rgba(55, 53, 47, 0.45);
   font-size: 14px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   user-select: none;
 }
 
