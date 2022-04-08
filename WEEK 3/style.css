@@ -65,6 +65,12 @@ body {
   transition: background-color 0.2s ease-in-out;
   user-select: none;
   font-size: 28px;
+  transition: transform 0.1s ease-in-out,
+   background-color 0.1s ease-in-out;
+}
+
+.button:active {
+  transform: scale(1.1, 1.1);
 }
 
 .zero,
