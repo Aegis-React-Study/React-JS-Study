@@ -25,16 +25,19 @@ function handleButtonClick(e) {
       ) {
         // do nothing
       } else {
-        console.log(last);
         switch (e.target.innerHTML) {
           case "÷":
             newInput = "/";
+            break;
           case "×":
             newInput = "*";
+            break;
           case "-":
             newInput = "-";
+            break;
           case "+":
             newInput = "+";
+            break;
         }
         equation.push(newInput);
       }
