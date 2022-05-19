@@ -1,0 +1,28 @@
+#login {
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 0.4px solid rgba(0, 0, 0, 0.2);
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 7px 10px;
+  margin: 5px 0px;
+  width: 250px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 0.4px solid rgba(0, 0, 0, 0.2);
+}
+
+#login-submit {
+  background-color: #4193ef;
+  color: #fafafa;
+  border: none;
+}

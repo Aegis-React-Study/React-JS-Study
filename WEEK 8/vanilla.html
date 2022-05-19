@@ -1,0 +1,69 @@
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카운터</title>
+    <style>
+      #container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #btns-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #number {
+        font-size: 96px;
+        font-weight: 500;
+      }
+
+      .btn {
+        outline: none;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        margin: 0px 5px;
+        font-size: 48px;
+      }
+
+      .btn:hover {
+        transform: scale(1.15);
+        transition: transform 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="number">0</div>
+      <div id="btns-container">
+        <button class="btn" id="plus">+</button>
+        <button class="btn" id="minus">-</button>
+      </div>
+    </div>
+    <script>
+      const btns = document.querySelectorAll("button");
+      const num = document.getElementById("number");
+
+      const handleClick = (e) => {
+        switch (e.target.innerText) {
+          case "+":
+            num.innerText = Number(num.innerText) + 1;
+            break;
+          case "-":
+            num.innerText = Number(num.innerText) - 1;
+            break;
+        }
+      };
+      btns.forEach((btn) => btn.addEventListener("click", handleClick));
+    </script>
+  </body>
+</html>
