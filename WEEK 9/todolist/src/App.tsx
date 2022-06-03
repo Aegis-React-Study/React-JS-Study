@@ -5,7 +5,7 @@ import GlobalStyle from "./styles/GlobalStyle";
 function App() {
   return (
     <React.Fragment>
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
       <Home />
     </React.Fragment>
   );

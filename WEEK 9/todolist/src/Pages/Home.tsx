@@ -99,6 +99,7 @@ const Home: React.FC = () => {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
     const time = new Date();
 
     setTodos([
@@ -115,6 +116,7 @@ const Home: React.FC = () => {
   return (
     <Wrapper>
       <TopBar />
+
       <Block focused={focus}>
         <SubmitContainer onSubmit={onSubmit}>
           <Input
